@@ -1,3 +1,62 @@
+@mixin btn {
+    display: inline-block;
+    margin-top: 25px;
+    border-radius: 45px ;
+    background: linear-gradient($color-secondary, $color-primary);
+    color: $color-white;
+    box-shadow: 10px 10px 10px $color-map-bg ;
+    padding: 10px;
+    cursor: pointer;
+    font-size: larger;
+    text-align: center;
+    vertical-align: middle;
+    @include md {
+        width: 290px;
+        height: 30px;
+        line-height: 30px;
+    }
+    @include lg {
+        width: 350px;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+.small-btn {
+    width: 150px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.medium-btn {
+    width: 190px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.big-btn {
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+}
+
+@mixin btn-grey {
+    border-radius: 25px;
+    background: $color-btn-bg;
+    color: $color-black;
+    box-shadow: 10px 10px 10px $color-map-bg;
+    padding: 30px 0;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
 // @mixin heading-shadow($colour:lightness-shift($colour-primary), $offset: $heading-shadow-size){
 //     text-shadow: $offset $offset $colour;
 // }
