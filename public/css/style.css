@@ -1,59 +1,247 @@
-/*
-Error: File to import not found or unreadable: ./utils/functions.
-        on line 2 of ./sass/main.scss
+.small-btn {
+  width: 150px;
+  height: 25px;
+  line-height: 25px; }
 
-1: @import "./utils/variables";
-2: @import "./utils/functions";
-3: @import "./utils/mixins";
-4: @import "./utils/extensions";
-5: @import "./utils/breakpoints";
-6: 
-7: @import "./base/base";
+.medium-btn {
+  width: 190px;
+  height: 30px;
+  line-height: 30px; }
 
-Backtrace:
-./sass/main.scss:2
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:44:in `import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: ./utils/functions.\A         on line 2 of ./sass/main.scss\A \A 1: @import \"./utils/variables\";\A 2: @import \"./utils/functions\";\A 3: @import \"./utils/mixins\";\A 4: @import \"./utils/extensions\";\A 5: @import \"./utils/breakpoints\";\A 6: \A 7: @import \"./base/base\";"; }
+.big-btn {
+  width: 250px;
+  height: 40px;
+  line-height: 40px; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  margin: 0; }
+
+P {
+  font-family: 'Roboto' , sans-serif;
+  font-size: 1.2em;
+  font-weight: 200;
+  line-height: 1.7;
+  font-style: normal; }
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.7;
+  font-style: normal; }
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  font-style: normal; }
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.4;
+  font-style: normal; }
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.3;
+  font-style: normal; }
+
+h5 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 200;
+  line-height: 1.2;
+  font-style: normal; }
+
+.bold {
+  font-weight: bold; }
+
+.header__logo {
+  padding: 20px; }
+  @media (min-width: 720px) {
+    .header__logo {
+      margin: 25px 25px; } }
+  @media (min-width: 960px) {
+    .header__logo {
+      margin: 45px 45px; } }
+
+.logo {
+  height: 50px;
+  display: block;
+  margin: 0 auto; }
+
+.footer {
+  background-color: #161616;
+  color: #fff;
+  padding: 20px; }
+  .footer__title {
+    margin-bottom: 20px; }
+  .footer__elements {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px; }
+    @media (min-width: 720px) {
+      .footer__elements {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; } }
+    @media (min-width: 960px) {
+      .footer__elements {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; } }
+  .footer__prop {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 15px; }
+  .footer__part {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 15px; }
+
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F0F3F4;
+  gap: 20px;
+  padding: 20px 0;
+  border-top: 1px solid #D0D3D4; }
+  @media (min-width: 720px) {
+    .map {
+      font-size: 17px; } }
+  @media (min-width: 960px) {
+    .map {
+      font-size: 25px; } }
+
+.main-desc {
+  padding: 45px;
+  text-align: center;
+  background-color: #F4F6F7; }
+  @media (min-width: 720px) {
+    .main-desc {
+      font-size: 17px; } }
+  @media (min-width: 960px) {
+    .main-desc {
+      font-size: 25px; } }
+  .main-desc__btn {
+    display: inline-block;
+    margin-top: 25px;
+    border-radius: 45px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: #fff;
+    box-shadow: 10px 10px 10px #D0D3D4;
+    padding: 10px;
+    cursor: pointer;
+    font-size: larger;
+    text-align: center;
+    vertical-align: middle; }
+    @media (min-width: 720px) {
+      .main-desc__btn {
+        width: 290px;
+        height: 30px;
+        line-height: 30px; } }
+    @media (min-width: 960px) {
+      .main-desc__btn {
+        width: 350px;
+        height: 40px;
+        line-height: 40px; } }
+
+.choose__title {
+  margin: 30px; }
+  @media (min-width: 720px) {
+    .choose__title {
+      text-align: center; } }
+  @media (min-width: 960px) {
+    .choose__title {
+      text-align: center; } }
+@media (min-width: 720px) {
+  .choose__info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); } }
+@media (min-width: 960px) {
+  .choose__info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); } }
+.choose__info__order {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 20px;
+  margin: 30px;
+  border-radius: 25px;
+  background: #F0F3F4;
+  color: #000;
+  box-shadow: 10px 10px 10px #D0D3D4;
+  padding: 30px 0;
+  cursor: pointer; }
+  .choose__info__order:hover {
+    background-color: #ffdff6; }
+
+.ico {
+  display: inline-block;
+  color: #9356DC; }
+
+.restaurant {
+  background-color: #F4F6F7;
+  padding: 30px; }
+  @media (min-width: 720px) {
+    .restaurant {
+      text-align: center; } }
+  @media (min-width: 960px) {
+    .restaurant {
+      text-align: center; } }
+  @media (min-width: 720px) {
+    .restaurant__menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px; } }
+  @media (min-width: 960px) {
+    .restaurant__menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px; } }
+
+.card {
+  width: 100%;
+  margin: 25px 0; }
+  .card__view {
+    border-radius: 20px 20px 0 0;
+    object-fit: fill;
+    width: 100%;
+    height: 210px; }
+  .card__info {
+    background-color: #fff;
+    border-radius: 0 0 25px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 25px; }
+    .card__info__title {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 25px 0; }
+
+/*# sourceMappingURL=style.css.map */

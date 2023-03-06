@@ -1,17 +1,19 @@
 .header {
     &__logo {
-       margin: auto;
        padding: 20px;
-       width: 100%;
        @include md {
-            margin: 0;
+            margin: 25px 25px;
          }
+       @include lg {
+            margin: 45px 45px;
+        }
     }
 }
 
 .logo {
     height: 50px;
     display: block;
+    margin: 0 auto;
 }
 
 

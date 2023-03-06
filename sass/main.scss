@@ -1,5 +1,4 @@
 @import "./utils/variables";
-@import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";
 @import "./utils/breakpoints";
@@ -7,16 +6,8 @@
 @import "./base/base";
 @import "./base/typography";
 
-@import "./components/buttons";
-
 @import "./layout/header";
-@import "./layout/nav";
-@import "./layout/container";
-@import "./layout/form";
 @import "./layout/footer";
 
 
-@import "./pages/work";
-@import "./pages/about";
-@import "./pages/project";
 @import "./pages/menu";
