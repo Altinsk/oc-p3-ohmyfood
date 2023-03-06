@@ -3,3 +3,5 @@
 echo .DS_Store >> .gitignore
 .DS_Store
 /.sass-cache
+/public/images/logo
+/public/images/restaurants
