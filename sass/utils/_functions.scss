@@ -1,0 +1,5 @@
+    // ex: font-size: rem(30)
+    @function rem($pixels) {
+        //divide pixel by 16 to return rems
+        @return ($pixels/16) + rem;
+    }

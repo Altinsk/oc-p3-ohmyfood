@@ -1,37 +1,24 @@
 .footer {
     background-color: $color-footer-bg;
     color: $color-white;
-    padding: 20px;
+    padding: rem(20);
     &__title {
-        margin-bottom: 20px;
+        margin-bottom: rem(20);
     }
     &__elements {
-         display: grid;
-         grid-template-rows: 1fr 1fr 1fr 1fr;
-         gap: $gap-footer;
-        @include md {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-        }
-        @include lg {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
+        @include breakpoint (medium) {
+            @include footer-icons-lg;
         }
     }
     &__prop {
-        display: flex;
-        justify-content: flex-start;
-        align-items: baseline;
-        gap: $gap-grid;
+        @include footer-icons-sm;
+        gap: rem(5);
     }
     &__part {
-        display: flex;
-        justify-content: flex-start;
-        align-items: baseline;
-        gap: $gap-flex;
+        @include footer-icons-sm;
     }
+}
+
+.adjust-margins {
+    margin: rem(5) rem(5);
 }

@@ -2,24 +2,29 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
-$color-map-bg: #D0D3D4;
+$color-map-bg: #E7E9E9;
 $color-card-bg: #F4F6F7;
+$color-list-bg: #F4F6F7;
 $color-btn-bg: #F0F3F4;
 $color-white: #fff;
 $color-black: #000;
 $color-footer-bg: #161616;
+$color-menu-bg: #F4F6F7;
 
-
+//text decoration
+$text-deco-thickness: 3px;
+$text-offset: 5px;
 
 // fonts size
 $font-mobile: 17px;
 $font-tablet: 22px;
 $font-desktop: 25px;
 
+
 //gaps
 $gap-map: 20px;
 $gap-grid: 15px;
-$gap-flex: 15px;
+$gap-flex: 5px;
 $gap-footer: 10px;
 
 

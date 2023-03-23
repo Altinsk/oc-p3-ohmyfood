@@ -2,6 +2,8 @@
 @import "./utils/mixins";
 @import "./utils/extensions";
 @import "./utils/breakpoints";
+@import "./utils/functions";
+@import "./utils/animations";
 
 @import "./base/base";
 @import "./base/typography";
@@ -9,4 +11,5 @@
 @import "./layout/header";
 @import "./layout/footer";
 
-@import "./pages/menu";
+@import "./pages/home";
+@import "./pages/menu"

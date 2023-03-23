@@ -1,18 +1,21 @@
 {
-  "name": "ohmyfood",
+  "name": "website",
   "version": "1.0.0",
-  "description": "Resto",
+  "description": "Scénario Vous venez d’être recruté chez Ohmyfood!, en tant que développeur junior. Félicitations !",
+  "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css" ,
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/Altinsk/oc-p3-ohmyfood.git"
   },
-  "author": "Omar",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/Altinsk/oc-p3-ohmyfood/issues"
   },
-  "homepage": ""
+  "homepage": "https://github.com/Altinsk/oc-p3-ohmyfood#readme" ,
+  "browsrslist": "last 4 versions"
 }

@@ -1,119 +1,129 @@
-.map {
+.h4-cards{
+    margin: rem(20) 0 0 rem(5);
+    padding: rem(0) rem(5);
+}
+
+.p-cards {
+    margin: 0 rem(5) rem(20) rem(5);
+    padding: 0 rem(5);
+}
+
+.euro-cards {
+    margin-right: rem(8) ;
+    padding: rem(7) rem(5);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F0F3F4;
-    gap: $gap-map;
-    padding: 20px 0;
-    border-top: 1px solid $color-map-bg;
-     @include md {
-         font-size: $font-mobile;
-     }
-     @include lg {
-         font-size: $font-desktop;
-     }
 }
 
-.main-desc {
-    padding: 45px ;
+.cmd-btn {
     text-align: center;
-    background-color: $color-card-bg;
-     @include md {
-         font-size: $font-mobile;
-     }
-     @include lg {
-         font-size: $font-desktop;
-     }
-    &__btn {
-        @include btn
-    }
+    // padding-bottom: rem(10);
 }
 
-.choose {
-    &__title {
-        margin: 30px;
-        @include md {
-            text-align: center;
-        }
-        @include lg {
-            text-align: center;
-        }
-    }
-    &__info {
-        @include md {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        }
-        @include lg {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        }
-        &__order {
-            display: flex;
-            justify-content: flex-start;
-            align-items: baseline;
-            gap: 20px;
-            margin: 30px;
-            @include btn-grey;
-            &:hover {
-                background-color: lighten($color: $color-secondary, $amount: 20%);  
-            }           
-        }
-   
-    }
-}
-.ico {
+.normalflow {
+    text-overflow: clip;
+    white-space: nowrap;
     display: inline-block;
-    color: $color-primary;
 }
 
-.restaurant {
-    background-color: $color-card-bg;
-    padding: 30px;
-    @include md {
-        text-align: center;
-    }
-    @include lg {
-        text-align: center;
-    }
-    &__menu {
-        @include md {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: $gap-grid;
-        }
-        @include lg {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); 
-            gap: $gap-grid; 
-        }
-    }
+.ol-head__item__container__box {
+    transition: all 630ms ease-in-out 100ms;
+    transform-origin: right;
+    overflow: hidden;
+    background-color: $color-tertiary;
+    border-radius: 0 20px 20px 0;    
+    width: 70%;
+    text-align: center;
+    display: inline-block;
+    align-self: stretch;
 
-}
-.card {
-    width: 100%;
-    margin: 25px 0;
-    &__view {
-        border-radius: 20px 20px 0 0;
-        object-fit: fill;
-        width: 100%;
-        height: 210px;
+    .fa-circle-check {
+        display: inline-block;
+        transform: rotate(-1turn);
+        transition: all 280ms ease-out 500ms;
+        color: white;
+        text-align: center;
+        margin: 0 auto;
+        cursor: pointer;
+        font-size: x-large;
+        position: relative;
+        top: 25px;
     }
-    &__info {
-        background-color: $color-white;
-        border-radius: 0 0 25px 25px;
+}
+
+.resto {
+    background-color: $color-menu-bg;
+        &__bg {
+            &__frame {
+                &--image {
+                    object-fit: cover;
+                    width: 100%;
+                    max-height: rem(350);
+                }
+            }
+        }
+}
+
+.course {
+    position: relative;
+    bottom: rem(50);
+    background-color: $color-menu-bg;
+    border-radius: rem(40) rem(40) 0 0;
+    &__title {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 20px;
-        margin-bottom: 25px;
-        &__title {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: space-between;
-            padding: 25px 0;
+        margin: 0 rem(30);
+        & > h1 {
+            font-style: italic;
         }
     }
 }
 
+.main-courses {
+    @include menu;
+}
+
+.underlined {
+    margin-bottom: rem(10);
+    @include underlined;
+}
+
+.ol-head {
+    padding: 0;
+    margin-bottom: rem(50);
+    &__item {
+            animation: list-item 300ms ease-in-out both 1, slide-up 500ms linear 1 ;
+            @for $i from 1 through 3 {
+                &--#{$i} {
+                    animation-delay: 200ms * $i;
+                }
+            }
+            @include list-style;
+            &:hover {
+                .ol-head__item__container__box {
+                        display: inline-block;
+                        width: rem(60);
+                        .fa-circle-check {
+                            transform: rotate(360deg);
+                        }
+                }
+                .overflow {
+                    @extend %overflow;
+                }
+            }
+                &__container {
+                    @include list-white;
+                    &__elements {
+                        & > p {
+                            width: 150px;
+                            @include breakpoint (medium) {
+                                width: 300px;
+                            }
+                        }
+                    }
+                    &__box {
+                        width: 0;
+                    }
+                }
+        }  
+   }   

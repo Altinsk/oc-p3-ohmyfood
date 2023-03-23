@@ -1,0 +1,146 @@
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-map-bg;
+    gap: $gap-map;
+    border-top: 1px solid $color-map-bg;
+     @include breakpoint(medium) {
+         font-size: $font-mobile;
+     }
+     @include breakpoint (large) {
+         font-size: $font-desktop;
+     }
+}
+
+.main-desc {
+    padding: rem(25) ;
+    text-align: center;
+    background-color: $color-card-bg;
+     @include breakpoint (medium) {
+         font-size: $font-mobile;
+     }
+     @include breakpoint (large) {
+         font-size: $font-desktop;
+     }
+    &__title {
+        margin: rem(10);
+    }
+    &__para {
+        font-weight: lighter;
+        font-family: 'roboto' , 'sans-serif';
+    }
+    &__btn {
+        @include btn
+    }
+}
+
+.choose {
+    &__title {
+        margin: rem(50) rem(30) auto;
+        @include breakpoint (medium) {
+            text-align: center;
+        }
+        @include breakpoint (large) {
+            text-align: center;
+        }
+    }
+    &__list {
+        @include list-style;
+        &__item { 
+            display: block;
+            counter-increment: item;
+            margin-bottom: rem(20);
+            @include list-grey;
+            &:hover {
+                background-color: lighten($color: $color-secondary, $amount: 20%);
+                & .list-icon {
+                    color: $color-primary;
+                    transform: scale(1.4);
+                }
+            }  
+        &:before { 
+            margin-right: rem(20);
+            margin-left: rem(-10);
+            content: counter(item);
+            background: $color-primary;
+            border-radius: 100%;
+            color: $color-white;
+            width: 1.3em;
+            text-align: center;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        &__title {
+            display: inline-block;
+            margin-left: rem(20);
+            }
+        }
+    }
+}
+
+.list-icon {
+    display: inline-block;
+}
+
+.restaurant {
+    background-color: $color-card-bg;
+    padding: 30px;
+    @include breakpoint (medium) {
+        text-align: center;
+    }
+    @include breakpoint (large) {
+        text-align: center;
+    }
+    &__menu {
+        @include breakpoint (medium) {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: $gap-grid;
+        }
+        @include breakpoint (large) {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); 
+            gap: $gap-grid; 
+        }
+    }
+}
+
+.card {
+    width: 100%;
+    margin: rem(25) 0;
+    position: relative;
+    &__badge {
+        @include badge;
+    }
+    &__view {
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+        width: 100%;
+        height: rem(270);
+    }
+    &__info {
+        background-color: $color-white;
+        border-radius: 0 0 rem(25)rem(25);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 rem(20);
+        margin-bottom: rem(25);
+        &__title {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            text-align: left;
+            padding: 0;
+            & > h3 {
+                margin: rem(5) 0;
+            }
+            & > p {
+                margin-top: 0;
+                margin-bottom: rem(20);
+            }
+        }
+    }
+}

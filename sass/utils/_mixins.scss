@@ -1,53 +1,115 @@
 @mixin btn {
     display: inline-block;
-    margin-top: 25px;
-    border-radius: 45px ;
+    margin-top: rem(30);
+    margin-bottom: rem(40);
+    border-radius: rem(50) ;
     background: linear-gradient($color-secondary, $color-primary);
     color: $color-white;
-    box-shadow: 10px 10px 10px $color-map-bg ;
-    padding: 10px;
+    box-shadow: rem(10) rem(10) rem(10) $color-map-bg ;
+    padding: rem(14) rem(25);
     cursor: pointer;
-    font-size: larger;
     text-align: center;
     vertical-align: middle;
-    @include md {
-        width: 290px;
-        height: 30px;
-        line-height: 30px;
+    font-family: 'roboto' , 'sans-serif';
+    font-size: rem(18);
+    @include breakpoint (medium) {
+        width: rem(210);
+        height: rem(30);
+        line-height: rem(30);
+        font-size: rem(19);
     }
-    @include lg {
-        width: 350px;
-        height: 40px;
-        line-height: 40px;
+    @include breakpoint (large) {
+        width: rem(250);
+        height: rem(40);
+        line-height: rem(40);
+        font-size: rem(22);
     }
 }
 
-.small-btn {
-    width: 150px;
-    height: 25px;
-    line-height: 25px;
+@mixin list-style {
+    counter-reset: item;
+    list-style-type: none;
+    padding: 0 rem(30);
 }
 
-.medium-btn {
-    width: 190px;
-    height: 30px;
-    line-height: 30px;
-}
-
-.big-btn {
-    width: 250px;
-    height: 40px;
-    line-height: 40px;
-}
-
-@mixin btn-grey {
-    border-radius: 25px;
+@mixin list-grey {
+    border-radius: rem(15);
     background: $color-btn-bg;
     color: $color-black;
-    box-shadow: 10px 10px 10px $color-map-bg;
-    padding: 30px 0;
+    box-shadow: rem(10) rem(10) rem(10) $color-map-bg;
+    padding: rem(10) 0;
     cursor: pointer;
 }
+
+@mixin list-white {
+    border-radius: rem(20);
+    background-color: $color-white;
+    box-shadow: rem(10) rem(10) rem(10) $color-map-bg;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: last baseline;
+    margin-top: rem(10);
+    padding: 0;
+    cursor: pointer;
+}
+
+@mixin badge {
+    position: absolute;
+    display: inline-block;
+    top: rem(15);
+    right: rem(20);
+    height: rem(15);
+    width: rem(75);
+    text-align: center;
+    vertical-align: middle;
+    padding: rem(10);
+    background-color: hsl(171, 72%, 74%);
+    color: hsla(168, 79%, 13%, 0.539);
+    font-weight: 300;
+    border-radius: rem(5);
+}
+
+@mixin menu {
+    padding: 0 rem(15);
+        }
+
+@mixin underlined {
+    ::after {
+        position: absolute;
+        height: rem(5);
+        width: 6%;
+        left: rem(16);
+        bottom: -rem(5);
+        background: $color-tertiary;
+        display: block;
+        margin-bottom: 50px;
+        content: "";
+    }
+}
+
+@mixin footer-icons-sm {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+@mixin footer-icons-lg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

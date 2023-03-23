@@ -1,6 +1,5 @@
 # ignore files
 
-echo .DS_Store >> .gitignore
 .DS_Store
 /.sass-cache
 /public/images/logo

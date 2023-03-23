@@ -1,0 +1,38 @@
+.fa-heart {
+    color: #FFF;
+    border-radius: 50%;
+    padding:.2em;
+    color: grey;
+    font-size: larger;
+}
+.fa-heart::before {
+    content: "\f004";
+    transition: all 700ms 10ms ease-in-out;
+    font: var(--fa-font-regular);
+}
+.fa-heart:hover::before{
+    color: $color-primary;
+    cursor: pointer;
+    font: var(--fa-font-solid);
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: $gap-flex;
+}
+.footer-icons h5 {
+    margin: 0;
+}
+
+@keyframes list-item {
+    0% { opacity: 0;} 
+    50% { opacity: 0.5;}
+    100% { opacity: 1;}
+ }
+ 
+ @keyframes slide-up {
+     0% { transform: translateY(30px);} 
+     100% { transform: translateY(0px);}
+  }

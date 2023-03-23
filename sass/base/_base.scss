@@ -1,16 +1,18 @@
  *,
  *::after,
  *::before {
-     margin: 0;
-     padding: 0;
      box-sizing: inherit;
  }
 
 html {
     // 10px div by def of 16px
+    // to have easier mental math to divide by 10px instead of 16px 
+    // browser based you could use: font-size: 62.5%
     scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
+    padding: 0;
 }
+
