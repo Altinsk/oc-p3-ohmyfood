@@ -2,6 +2,7 @@
     background-color: $color-footer-bg;
     color: $color-white;
     padding: rem(20);
+    animation: slid-in 2000ms linear 1 forwards;
     &__title {
         margin-bottom: rem(20);
     }

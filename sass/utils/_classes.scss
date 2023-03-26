@@ -1,0 +1,67 @@
+.btn {
+    display: inline-block;
+    margin-top: rem(30);
+    margin-bottom: rem(40);
+    border-radius: rem(50) ;
+    background: linear-gradient( 356deg, rgba(155, 89, 220, 1) 0%, rgba(167, 127, 216, 1) 33%, rgba(255, 121, 218, 1) 100%);
+    color: $color-white;
+    box-shadow: rem(10) rem(10) rem(10) $color-map-bg ;
+    padding: rem(14) rem(25);
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'roboto' , 'sans-serif';
+    font-size: rem(18);
+    position: relative;
+    z-index: 1;
+    &:hover {
+        &::after {
+            opacity: 1;
+       }
+    }
+    &::after {
+       @include pseudo-elem;
+        opacity: 0;
+        background: linear-gradient( 356deg, lighten($color-prime, 5%) 0%, lighten($color-second, 5%) 33%,
+            lighten($color-third, 5%) 100%);
+            box-shadow: 0px 2px 10px 0px #525252;
+            border-radius: rem(50) ;
+        z-index: -1;
+        transition: opacity 250ms;
+    }
+    @include breakpoint (medium) {
+        width: rem(210);
+        height: rem(30);
+        line-height: rem(30);
+        font-size: rem(19);
+    }
+    @include breakpoint (large) {
+        width: rem(250);
+        height: rem(40);
+        line-height: rem(40);
+        font-size: rem(22);
+    }
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    transition: opacity 750ms; visibility: 750ms ;
+}
+
+.loader::before {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #009578;
+    border-radius: 50%;
+    animation: loading 2s ease 0s 1 forwards;
+  }

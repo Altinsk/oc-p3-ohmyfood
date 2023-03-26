@@ -1,29 +1,10 @@
-@mixin btn {
-    display: inline-block;
-    margin-top: rem(30);
-    margin-bottom: rem(40);
-    border-radius: rem(50) ;
-    background: linear-gradient($color-secondary, $color-primary);
-    color: $color-white;
-    box-shadow: rem(10) rem(10) rem(10) $color-map-bg ;
-    padding: rem(14) rem(25);
-    cursor: pointer;
-    text-align: center;
-    vertical-align: middle;
-    font-family: 'roboto' , 'sans-serif';
-    font-size: rem(18);
-    @include breakpoint (medium) {
-        width: rem(210);
-        height: rem(30);
-        line-height: rem(30);
-        font-size: rem(19);
-    }
-    @include breakpoint (large) {
-        width: rem(250);
-        height: rem(40);
-        line-height: rem(40);
-        font-size: rem(22);
-    }
+@mixin pseudo-elem {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 @mixin list-style {
@@ -77,7 +58,7 @@
     ::after {
         position: absolute;
         height: rem(5);
-        width: 6%;
+        width: rem(25);
         left: rem(16);
         bottom: -rem(5);
         background: $color-tertiary;

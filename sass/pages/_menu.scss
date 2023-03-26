@@ -14,24 +14,21 @@
     display: flex;
 }
 
-.cmd-btn {
-    text-align: center;
-    // padding-bottom: rem(10);
+.cmd {
+    text-align: center;   
 }
 
 .normalflow {
     text-overflow: clip;
     white-space: nowrap;
-    display: inline-block;
 }
 
 .ol-head__item__container__box {
     transition: all 630ms ease-in-out 100ms;
-    transform-origin: right;
+    transform-origin: left;
     overflow: hidden;
     background-color: $color-tertiary;
     border-radius: 0 20px 20px 0;    
-    width: 70%;
     text-align: center;
     display: inline-block;
     align-self: stretch;

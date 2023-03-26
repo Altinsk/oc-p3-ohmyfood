@@ -5,6 +5,7 @@
     background-color: $color-map-bg;
     gap: $gap-map;
     border-top: 1px solid $color-map-bg;
+    animation: slid-in 2000ms linear 1 forwards;
      @include breakpoint(medium) {
          font-size: $font-mobile;
      }
@@ -17,6 +18,7 @@
     padding: rem(25) ;
     text-align: center;
     background-color: $color-card-bg;
+    animation: slid-in 2000ms linear 1 forwards;
      @include breakpoint (medium) {
          font-size: $font-mobile;
      }
@@ -30,12 +32,10 @@
         font-weight: lighter;
         font-family: 'roboto' , 'sans-serif';
     }
-    &__btn {
-        @include btn
-    }
 }
 
 .choose {
+    animation: slid-in 2000ms linear 1 forwards;
     &__title {
         margin: rem(50) rem(30) auto;
         @include breakpoint (medium) {
@@ -59,7 +59,7 @@
                     transform: scale(1.4);
                 }
             }  
-        &:before { 
+        &::before { 
             margin-right: rem(20);
             margin-left: rem(-10);
             content: counter(item);
@@ -86,6 +86,7 @@
 .restaurant {
     background-color: $color-card-bg;
     padding: 30px;
+    animation: slid-in 2000ms linear 1 forwards;
     @include breakpoint (medium) {
         text-align: center;
     }

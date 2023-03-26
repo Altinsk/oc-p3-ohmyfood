@@ -36,3 +36,25 @@
      0% { transform: translateY(30px);} 
      100% { transform: translateY(0px);}
   }
+
+  @keyframes loading {
+    0% {transform: rotate(0turn);
+    } 
+    50% { transform: rotate(1turn);
+    }
+    75% { transform: rotate(0turn);
+    }
+    100% { transform: rotate(1turn);
+            opacity: 0;
+            visibility:hidden;
+    }
+  }
+
+  @keyframes slid-in {
+    from { 
+        transform: translateX(-9999px) ;
+    }
+    to {
+        transform: translateX(0);
+    }
+  }
