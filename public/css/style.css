@@ -224,7 +224,8 @@ p {
       color: #000;
       box-shadow: 0.625rem 0.625rem 0.625rem #E7E9E9;
       padding: 0.625rem 0;
-      cursor: pointer; }
+      cursor: pointer;
+      line-height: 1.25em; }
       .choose__list__item:hover {
         background-color: #ffdff6; }
         .choose__list__item:hover .list-icon {
@@ -237,7 +238,8 @@ p {
         background: #9356DC;
         border-radius: 100%;
         color: #fff;
-        width: 1.3em;
+        width: 1em;
+        height: 1.1em;
         text-align: center;
         vertical-align: middle;
         display: inline-block; }
@@ -341,18 +343,22 @@ p {
   border-radius: 0 20px 20px 0;
   text-align: center;
   display: inline-block;
-  align-self: stretch; }
+  align-self: stretch;
+  position: relative; }
   .ol-head__item__container__box .fa-circle-check {
     display: inline-block;
     transform: rotate(-1turn);
     transition: all 280ms ease-out 500ms;
     color: white;
-    text-align: center;
-    margin: 0 auto;
     cursor: pointer;
     font-size: x-large;
-    position: relative;
-    top: 25px; }
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    vertical-align: middle;
+    position: absolute;
+    top: 30%;
+    left: 30%; }
 
 .resto {
   background-color: #F4F6F7; }

@@ -20,6 +20,7 @@
     box-shadow: rem(10) rem(10) rem(10) $color-map-bg;
     padding: rem(10) 0;
     cursor: pointer;
+    line-height: 1.25em;
 }
 
 @mixin list-white {

@@ -32,18 +32,22 @@
     text-align: center;
     display: inline-block;
     align-self: stretch;
+    position: relative;
 
     .fa-circle-check {
         display: inline-block;
         transform: rotate(-1turn);
         transition: all 280ms ease-out 500ms;
         color: white;
-        text-align: center;
-        margin: 0 auto;
         cursor: pointer;
         font-size: x-large;
-        position: relative;
-        top: 25px;
+        position: absolute;
+        text-align: center;
+        margin: 0 auto;
+        vertical-align: middle;
+        position: absolute;
+        top: 30%;
+        left: 30%;
     }
 }
 
