@@ -487,8 +487,7 @@ p {
   justify-content: center;
   align-items: center;
   background: #fff;
-  transition: opacity 750ms;
-  visibility: 750ms; }
+  transition: opacity 750ms , visibility 750ms; }
 
 .loader::before {
   content: "";
