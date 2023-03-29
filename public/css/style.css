@@ -86,13 +86,13 @@ h3 {
   font-size: clamp(0.9rem, 1.5vw, 1.3rem); }
 
 h4 {
-  font-size: clamp(0.8rem, 1.3vw, 1.1rem); }
+  font-size: clamp(0.7rem, 1.3vw, 1.1rem); }
 
 h5 {
   font-size: clamp(0.8rem, 1vw, 1.1rem); }
 
 p {
-  font-size: clamp(0.8rem, 1.5vw, 1.1rem); }
+  font-size: clamp(0.7rem, 1vw, 1.1rem); }
 
 h1, h2, h3, h4, h5 {
   font-family: 'Roboto', sans-serif;
@@ -214,7 +214,7 @@ p {
   .choose__list {
     counter-reset: item;
     list-style-type: none;
-    padding: 0 1.875rem; }
+    padding: 0 0.9375rem; }
     .choose__list__item {
       display: block;
       counter-increment: item;
@@ -239,10 +239,11 @@ p {
         border-radius: 100%;
         color: #fff;
         width: 1em;
-        height: 1.2em;
         text-align: center;
         vertical-align: middle;
-        display: inline-block; }
+        display: inline-flex;
+        justify-content: center;
+        align-items: center; }
       .choose__list__item__title {
         display: inline-block;
         margin-left: 1.25rem; }
@@ -403,7 +404,7 @@ p {
     animation: list-item 300ms ease-in-out both 1, slide-up 500ms linear 1;
     counter-reset: item;
     list-style-type: none;
-    padding: 0 1.875rem; }
+    padding: 0 0.9375rem; }
     .ol-head__item--1 {
       animation-delay: 200ms; }
     .ol-head__item--2 {
@@ -426,7 +427,7 @@ p {
       padding: 0;
       cursor: pointer; }
       .ol-head__item__container__elements > p {
-        width: 150px; }
+        width: 100px; }
         @media (min-width: 38.125em) {
           .ol-head__item__container__elements > p {
             width: 300px; } }

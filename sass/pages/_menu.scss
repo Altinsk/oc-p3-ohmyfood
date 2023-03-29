@@ -116,7 +116,7 @@
                     @include list-white;
                     &__elements {
                         & > p {
-                            width: 150px;
+                            width: 100px;
                             @include breakpoint (medium) {
                                 width: 300px;
                             }

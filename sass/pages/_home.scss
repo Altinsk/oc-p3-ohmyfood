@@ -67,10 +67,12 @@
             border-radius: 100%;
             color: $color-white;
             width: 1em;
-            height: 1.2em;
+            // height: 1em;
             text-align: center;
             vertical-align: middle;
-            display: inline-block;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
         }
         &__title {
             display: inline-block;

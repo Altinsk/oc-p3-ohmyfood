@@ -1,6 +1,4 @@
 # ignore files
-
 .DS_Store
+/.vscode
 /.sass-cache
-/public/images/logo
-/public/images/restaurants

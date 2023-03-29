@@ -19,13 +19,15 @@ h3 {
    font-size: clamp(0.9rem, 1.5vw, 1.3rem); 
 }
 h4 {
-   font-size: clamp(0.8rem, 1.3vw, 1.1rem); 
+   font-size: clamp(0.7rem, 1.3vw, 1.1rem); 
 }
 h5 {
    font-size: clamp(0.8rem, 1vw, 1.1rem); 
 }
 p {
-   font-size: clamp(0.8rem, 1.5vw, 1.1rem); 
+   // font-size: clamp(0.8rem, 1.5vw, 1.1rem); 
+   font-size: clamp(0.7rem, 1vw, 1.1rem); 
+
 }
 
 //common font properties
