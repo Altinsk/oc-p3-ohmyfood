@@ -11,13 +11,20 @@
             @include footer-icons-lg;
         }
     }
-    &__prop {
-        @include footer-icons-sm;
-        gap: rem(5);
-    }
-    &__part {
-        @include footer-icons-sm;
-    }
+        &__prop {
+            @include footer-icons-sm;
+            gap: rem(5);
+        }
+        &__part {
+            @include footer-icons-sm;
+        }
+        &__email {
+            text-decoration: none;
+            & > h5 {
+                color: $color-white;
+            }
+        }
+        
 }
 
 .adjust-margins {
